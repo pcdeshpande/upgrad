@@ -62,4 +62,11 @@ public class Restaurant {
         return name;
     }
 
+    public float getOrderValue(List<Item> itemsList){
+        float total=0;
+        for(Item item:itemsList){
+            total = total+item.getPrice();
+        }
+        return total;
+    }
 }
